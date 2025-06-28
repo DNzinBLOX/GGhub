@@ -1,1 +1,6 @@
-# GGhub
+if game.PlaceId == 3823781113 then
+print("Saber Simulator detected"
+print("Loading GG hub - Saber Simulator")
+else
+print("game not supported!"
+end
