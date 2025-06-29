@@ -1,38 +1,26 @@
--- Saber Simulator
-local gameId = 3823781113
+local supportedPlaceId = 3823781113 -- Saber Simulator
+local githubScriptUrl = "https://raw.githubusercontent.com/DNzinBLOX/Test/refs/heads/main/SaberSimulator"
 
-if game.PlaceId == gameId then
-    print("Saber Simulator detectado")
-    print("Carregando GG hub - Saber Simulator")
-
-    local url = "https://raw.githubusercontent.com/DNzinBLOX/Test/refs/heads/main/SaberSimulator"
-
-    local function loadScript("https://raw.githubusercontent.com/DNzinBLOX/Test/refs/heads/main/SaberSimulator")
-        local success, result = pcall(function()
-            return game:HttpGet(https://raw.githubusercontent.com/DNzinBLOX/Test/refs/heads/main/SaberSimulator))()
-        end)
-
-        if success then
-            local script, err = loadstring(result)
-            if script then
-                return script()
-            else
-                warn("Erro ao carregar GG hub - Saber Simulator: " .. tostring(err))
-            end
-        else
-            warn("Erro ao carregar GG hub - Saber Simulator: " .. tostring(result))
-        end
-        return nil
-    end
-
-    local scriptLoaded = loadScript(url)
-
-    if scriptLoaded then
-        print("GG hub - Saber Simulator carregado com sucesso!")
+-- Função para carregar o script do GitHub
+local function loadScriptFromGithub(url)
+    local HttpService = game:GetService("HttpService")
+    local response = HttpService:RequestAsync({ Url = url, Method = "GET" })
+    if response.Success then
+        local scriptCode = response.Body
+        local script = loadstring(scriptCode) -- Use loadstring para Roblox
+        return script
     else
-        print("Falha ao carregar GG hub - Saber Simulator. Verifique o console para mais informações.")
+        warn("Falha ao carregar o script do GitHub:", response.StatusCode)
     end
-else
-    print("Jogo não suportado. Por favor, jogue em Saber Simulator (ID: " .. gameId .. ")")
 end
 
+-- Verificar se o jogo é suportado
+if game.PlaceId == supportedPlaceId then
+    -- Carregar e executar o script do GitHub
+    local script = loadScriptFromGithub(githubScriptUrl)
+    if script then
+        script()
+    end
+else
+    print("Jogo não suportado!")
+end
