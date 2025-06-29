@@ -1,11 +1,19 @@
 -- Saber Simulator
-if game.PlaceId == 3823781113 then
-    print("Saber Simulator detected")
-    print("Loading GG hub - Saber Simulator")
+local gameId = 3823781113
+if game.PlaceId == gameId then
+    print("Saber Simulator detectado")
+    print("Carregando GG hub - Saber Simulator")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DNzinBLOX/GGhub/refs/heads/main/GGhub_SaberSimulator"))()
-
-    print("GG hub - Saber Simulator Loaded!")
+    local url = "https://raw.githubusercontent.com/DNzinBLOX/GGhub/main/GGhub_SaberSimulator.lua"
+    local success, result = pcall(function()
+        loadstring(game:HttpGet(url))()
+    end)
+    if success then
+        print("GG hub - Saber Simulator carregado com sucesso!")
+    else
+        warn("Erro ao carregar GG hub - Saber Simulator: " .. tostring(result))
+    end
 else
-    print("game not supported!")
+    print("Jogo não suportado. Por favor, jogue em Saber Simulator (ID: " .. gameId .. ")")
 end
+
