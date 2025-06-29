@@ -1,10 +1,29 @@
 if game.PlaceId == 3823781113 then
-print("Saber Simulator detected")
-print("Loading GG hub - Saber Simulator")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DNzinBLOX/GGhub/refs/heads/main/GGhub_SaberSimulator"))()
-print("GG hub - Saber Simulator Loaded!")
-
+    print("Saber Simulator detected")
+    print("Loading GG hub - Saber Simulator")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DNzinBLOX/GGhub/refs/heads/main/GGhub_SaberSimulator"))()
+    print("GG hub - Saber Simulator Loaded!")
 else
-print("game not supported!")
+    print("game not supported!")
+    local screenGui = Instance.new("ScreenGui")
+    local textLabel = Instance.new("TextLabel")
+    screenGui.Name = "GameNotSupportedGui"
+    screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    screenGui.ResetOnSpawn = false
+    
+    textLabel.Name = "NotSupportedLabel"
+    textLabel.Parent = screenGui
+    textLabel.Size = UDim2.new(0, 400, 0, 100)
+    textLabel.Position = UDim2.new(0.5, -200, 0.5, -50) -- Centralizado
+    textLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Fundo vermelho
+    textLabel.BackgroundTransparency = 0.3
+    textLabel.BorderSizePixel = 2
+    textLabel.BorderColor3 = Color3.fromRGB(0, 0, 0) -- Borda preta
+    textLabel.Text = "Game Not Supported!"
+    textLabel.TextColor3 = Color3.fromRGB(255, 255, 255) -- Texto branco
+    textLabel.TextScaled = true
+    textLabel.Font = Enum.Font.SourceSansBold
 
+    wait(3)
+    screenGui:Destroy()
 end
