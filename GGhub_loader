@@ -14,11 +14,13 @@ local function loadScriptFromGithub(url)
 end
 
 if game.PlaceId == PlaceId then
-    -- Carregar e executar o script do GitHub
     local script = loadScriptFromGithub(githubUrl)
     if script then
         script()
     end
 else
     print("Jogo não suportado!")
+    local Players = game:GetService("Players")
+    local player = Players.LocalPlayer
+    player:Kick("Jogo Não Suportado!")
 end
