@@ -4,7 +4,7 @@ if game.PlaceId == gameId then
     print("Saber Simulator detectado")
     print("Carregando GG hub - Saber Simulator")
 
-    local url = "https://raw.githubusercontent.com/DNzinBLOX/GGhub/main/GGhub_SaberSimulator.lua"
+    local url = "https://raw.githubusercontent.com/DNzinBLOX/GGhub/main/GGhub_SaberSimulator"
     local success, result = pcall(function()
         loadstring(game:HttpGet(url))()
     end)
