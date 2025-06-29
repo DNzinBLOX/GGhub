@@ -7,7 +7,7 @@ if game.PlaceId == gameId then
 
     local url = "https://raw.githubusercontent.com/DNzinBLOX/Test/refs/heads/main/SaberSimulator"
 
-    local function loadScript(url)
+    local function loadScript("https://raw.githubusercontent.com/DNzinBLOX/Test/refs/heads/main/SaberSimulator")
         local success, result = pcall(function()
             return game:HttpGet("https://raw.githubusercontent.com/DNzinBLOX/Test/refs/heads/main/SaberSimulator")
         end)
