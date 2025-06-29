@@ -1,7 +1,15 @@
 if game.PlaceId == 3823781113 then
     print("Saber Simulator detected")
     print("Loading GG hub - Saber Simulator")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/DNzinBLOX/GGhub/refs/heads/main/GGhub_SaberSimulator"))()
+
+local success, result = pcall(function()
+    return loadstring(game:HttpGet("https://raw.githubusercontent.com/DNzinBLOX/GGhub/refs/heads/main/GGhub_SaberSimulator"))()
+end)
+
+if not success then
+    print("Erro ao carregar script:", result)
+end
+
     print("GG hub - Saber Simulator Loaded!")
 else
     print("game not supported!")
