@@ -3,7 +3,7 @@ if game.PlaceId == 3823781113 then
     print("Saber Simulator detected")
     print("Loading GG hub - Saber Simulator")
 
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DNzinBLOX/GGhub/refs/heads/main/GGhub_SaberSimulator"))()
 
     print("GG hub - Saber Simulator Loaded!")
 else
