@@ -112,16 +112,6 @@ local autoReward = Main:CreateToggle({
                            end
                            task.wait(0.5)
                         end
-                        
-                        -- Notificação de sucesso apenas se coletou algum reward
-                        if rewardsClaimed > 0 and getgenv().autoReward then
-                           Rayfield:Notify({
-                              Title = "DailyRewards Colleted!",
-                              Content = "DailyRewards colleted",
-                              Duration = 4,
-                              Image = 4483362458,
-                           })
-                        end
                      end
                   end
                end)
