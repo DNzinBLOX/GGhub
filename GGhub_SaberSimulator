@@ -1,1 +1,197 @@
-([[This file was protected with MoonSec V3]]):gsub('.+', (function(a) _KjopWtFZIrdh = a; end)); return(function(t,...)local l;local p;local r;local d;local z;local f;local e=24915;local n=0;local s={};while n<574 do n=n+1;while n<0x28e and e%0x26dc<0x136e do n=n+1 e=(e*136)%49483 local g=n+e if(e%0x2e10)<0x1708 then e=(e-0x96)%0x9d89 while n<0x179 and e%0x3276<0x193b do n=n+1 e=(e*776)%24028 local l=n+e if(e%0x3eb2)<0x1f59 then e=(e-0x43)%0x97d7 local e=65466 if not s[e]then s[e]=0x1 f={};end elseif e%2~=0 then e=(e+0x113)%0x8854 local e=6153 if not s[e]then s[e]=0x1 end else e=(e*0x229)%0x1b1c n=n+1 local e=1046 if not s[e]then s[e]=0x1 p=string;end end end elseif e%2~=0 then e=(e*0x2c6)%0x9f6a while n<0x23c and e%0x2bf8<0x15fc do n=n+1 e=(e*212)%37831 local d=n+e if(e%0x1de2)>=0xef1 then e=(e*0x106)%0x6963 local e=79439 if not s[e]then s[e]=0x1 l=(not l)and _ENV or l;end elseif e%2~=0 then e=(e+0x1fb)%0x13a8 local e=55974 if not s[e]then s[e]=0x1 l=getfenv and getfenv();end else e=(e+0x37d)%0xac16 n=n+1 local e=40626 if not s[e]then s[e]=0x1 r=tonumber;end end end else e=(e*0x1a5)%0x3335 n=n+1 while n<0x182 and e%0x2af4<0x157a do n=n+1 e=(e-594)%30722 local g=n+e if(e%0x1d9a)>=0xecd then e=(e-0x364)%0x801e local e=8516 if not s[e]then s[e]=0x1 end elseif e%2~=0 then e=(e-0x3f3)%0x37d6 local e=95939 if not s[e]then s[e]=0x1 d=function(d)local e=0x01 local function s(n)e=e+n return d:sub(e-n,e-0x01)end while true do local n=s(0x01)if(n=="\5")then break end local e=p.byte(s(0x01))local e=s(e)if n=="\2"then e=f.qeciiBZK(e)elseif n=="\3"then e=e~="\0"elseif n=="\6"then l[e]=function(n,e)return t(8,nil,t,e,n)end elseif n=="\4"then e=l[e]elseif n=="\0"then e=l[e][s(p.byte(s(0x01)))];end local n=s(0x08)f[n]=e end end end else e=(e+0x1b7)%0x7a16 n=n+1 local e=18089 if not s[e]then s[e]=0x1 z="\4\8\116\111\110\117\109\98\101\114\113\101\99\105\105\66\90\75\0\6\115\116\114\105\110\103\4\99\104\97\114\87\67\122\85\122\73\82\80\0\6\115\116\114\105\110\103\3\115\117\98\75\90\101\111\98\120\71\110\0\6\115\116\114\105\110\103\4\98\121\116\101\73\90\119\111\86\119\75\83\0\5\116\97\98\108\101\6\99\111\110\99\97\116\85\65\70\90\106\101\71\88\0\5\116\97\98\108\101\6\105\110\115\101\114\116\122\121\88\106\67\110\89\98\5";end end end end end e=(e+93)%46037 end d(z);local n={};for e=0x0,0xff do local s=f.WCzUzIRP(e);n[e]=s;n[s]=e;end local function g(e)return n[e];end local p=(function(z,p)local t,s=0x01,0x10 local n={{},{},{}}local l=-0x01 local e=0x01 local d=z while true do n[0x03][f.KZeobxGn(p,e,(function()e=t+e return e-0x01 end)())]=(function()l=l+0x01 return l end)()if l==(0x0f)then l=""s=0x000 break end end local l=#p while e<l+0x01 do n[0x02][s]=f.KZeobxGn(p,e,(function()e=t+e return e-0x01 end)())s=s+0x01 if s%0x02==0x00 then s=0x00 f.zyXjCnYb(n[0x01],(g((((n[0x03][n[0x02][0x00]]or 0x00)*0x10)+(n[0x03][n[0x02][0x01]]or 0x00)+d)%0x100)));d=z+d;end end return f.UAFZjeGX(n[0x01])end);d(p(48,"2yoUEnI^YG7}HKbwKn"));d(p(221,"o8say-F!fBL=}z5Dsay}z}WTs8a=Fa!DaD}sDF88a!-y-f!-=!5-D=s8yFcFsL=f}55D8zy*-=!sffza}zSL8-yz8 a!}-5LMys}--yBFL===yDzsysay=8}y-z-DB8Lay-}!faB}yz=88say=-5BF=s5fz5sByDFB85y-z85f85a-D-!DBL=5Dy)Dw5as--!z=6=sDLsFz5jBBaLfzLDF88ya-afBBB=z5L6Fa8ynyD!5}FzD5=sF5x%F!fLL}=DD8zyas!!LLzB5z-8!8s-F-faa-F5}DBsy-s!=B}=zzLza8Bs!--8=azBfzs2=8=yDfsf8=FzLB5}--y!sBB=zz5Dfs<a}-!!a=!zFzLDBa!Fy8uaf}LzLD5s=y!6=Bz=Bz5Ds8!ysF{-DLFLBz8ssaA-?8Fa=}z5BP5ssy!!sFD}-=-zDG!a8F!BCyFFLDf8za!-Dff!5}5z-3Faa-!!BfF-a!fCf8zy!Fafy=f=yl8RFy8afFsBz}!!DLFasyB!DBF-FzLgasBy}!sf!=s}=z8sysyyy-zyr"));local e=(-1549+(function()local s,e=0,1;(function(e)e(e(e)and e(e))end)(function(n)if s>307 then return n end s=s+1 e=(e*665)%14386 if(e%1696)<848 then e=(e*90)%32698 return n(n(n))else return n end return n end)return e;end)())local g=f.ExELQXkq or f.fBfFKyda;local de=(getfenv)or(function()return _ENV end);local y=1;local z=4;local l=2;local d=3;local function le(c,...)local a=p(e,"v&,geC%pz>sRP1GA&;zseA&e1s>G%g,zG1Repzg1/zP%zRCSC1eG&g1epiCg,pp>e,T,PpzPsCpGeSF1Ps,RAGRep>gGCpgpAeR>zge&A%sAp%CC,G1Pszp,,1zA%&&z11s,sA>RC1&sPAsAeGgzBgR>zRgA/%1P,GApRppPe&CegRAgpCe1G,se%>,GAgRzp1e,ipP1seC%&RGaGz1>>1Cs,,GCRzps,G=%P5zReAA>PPs%CG,zG%eC{APG>gCz%e,>Pp1es%CzRP>>eCMsPA1CPG>,C,PzR}s&%g,zG%s>pAA.1>RRzzC_,,PI>z%A&GAesRpA1,sgCR,UGCD>Rs>G%z,G1sRPCg,PG;PGzCeGsPppgCAsRAPAsGzp&%)pP&zpGzR1p&g%ARc&A>sRpRgPYzpGzpe1P1P%>PCA,1GpsApA1%>ACA,eG>APGg>R&1AgzzCC&&1%>RsRzs%g{,G1sPp,,zACeG,%1p>P%&%1g,&zGs>PCG&pGsR_pzesAoPR>e%&&11psA%AgpzRC>&e1>>Gs>>pC>&%1PsGeA,pAzRC&%Gj>A%e,>e&,z1Gsg%RgAzPC,,C1Rsu%C%1%&&>1sR,%z&zGGPepzeg&gPp>RCzR%z%gAaeP>1&PCp1gG&%PPzT%y&1G,sP%sPR>GCe&>1GGA1pzGC%,iGsszC>e(A,P>zgCg& PG,AAeRzp1e,e1P1>CC%&RG!AgPR>PC>RszCeg=zP11CP%zsCC7R1>seAzRspAeeF>PG>gR&C1GgRz%Pg&A%^pGAs%%G&,;gPpzeePtAG,seCzg}GsRCp>1&>>Cs&AGeGG1Psz%CRGzseptP1&1PPezPesAz1?s&CGRAz>ez.11,GFPs>peA&A1Cg%AARAzee>%,gP?PP>zpGzPCp&g%ARI1AeR>p1,pAGP&z,gR,&GesQ%s,zA>>gp>g>AGPe>,,s,,GpssAGP%zpeP&&&AAGPA>gGRRzpeg>AG<%AsR,pgeR7&RCzpe1R&z&gsAAPe1RRppsec&&sC>%Cs,CGzss%PP%sSeA&e1>G,PP>ReG&eGgs&Cg,p eR%pGgA;RPzp>%l,,GCs1p%gsz1Cs&%1Rs!sG>zC,,%1GsR%zg%K&Cggg1Ps&%%>g%e,>GsR,gGAzR1P%z&eA+R1P>A&A,gGxsGpsA>m&RC>,eeFPP1>>C%Rzzze&*%PR1gPszPC&*>1ps,e>&>G>Rp%PP1>%C%&RGXApPR>1CR&GpAeA=zP1>,>szGe%7p1A>Cez,%Gzsz%Ge_>e%e&1G,spsAsgCR&PAessePeeqzP1z1C&sR%1g,ApRPz&e%AR9A>%%%&AGes>Rss,C>,&GRRCpg,CAAPAzPessRpPgeA>RG1!s>z&gg{>pP%RCC&,1&>>%>g&zCC_ZG1g>zsP>,CR&CG/se%GP&z1es#A1e1PRAzACeyA1g>s%pP,z1eR&?1C1GPz>peP&1GC>PAG1:zpeP&&&>&k1,>peA&1Gzze%ggPGsR%zIgR>1p,,%GRR^RPz&&A,PAGR/gggs&%z,%Rgs,R1As>epmPzRCA&e1>>Gss%ACC,p1>CP%1gCGPRepGezc%>,Cp&PRepAg1=,PpPAPgpRgP&e1e>PADPep>gG(g&z0,RGz%APP>RIs7C1,CPssGpR,GL)pP&>GRs,%p,Pee&RGpsC%zggAGP,psCQPgR%p1gCRzsge&H%PRGeR1zgC,PePA>pCA&1>1R>%zgAR&P%z1eA&>PA>,%z&GG,%gpAg%F%RAgP,G&C1s>Gez&AG,%eCA0&>e%P&1G,spRh>s%>&PG,R&%A&&6>P,zsepAAPGse%C,CGAs1pG1&s,Cs&AGeGPG8>zC>g&Gp>,p&esAzPezGe>sRpegeA>RG1,RPpCgpU>C1,RG%sRp0p%%AggAg%>%&esb&PRz>GzR%p&g%AR,PAesRpgeph11tzPC%&epggGAPP&z%>tpGg%APPRz>e1sAppgzA1P,1es1psee>G%Z,CGssApeg>ep gz>CR&,1p>Pse>zCu&&G>>Aegg%AzRGppep&e15,zA&R&p%gReGgCG1%Ae%1ss,%g,zG1&>1zs>%%Pp>zC5&C1sA&P>>%Cg,01ss,pe&&ARRszeeGs&%R,sGARePFzC,g&O_,Re&zG>s&%%,Rgg,sGPR&%>gpZ,s,zzC&(R1%>sA,P,pReYOC)1o&R>psC,jzRA>%%M&RGRRzSpPA>3CC&s,giC1R>>AeP&p1e,7pf14%Pszsu{AzPA>R%}RRpGe%VzP1g,e_P%>e>%sPg^%RRspAeeU>nR>gCz&1Ggsp%Pg&Uz1&zieCtsAy>eC>&GACsP%1g,ApPzz&e%SRA%>1Cs&AGesA%GgeAzACz,eR&A1&>%CR,%GCsR%AgzDPRGzgez&e1,>zCP,&A.sRpEgCARRAzee>,6A%>zC1,,,esPp&g%<1h&zCeRHA&p>>CG,g<zRsp,gzAPP,z%eG&/GpsACA,pG>1CpggzA1P,>geP&,1%>G%L,CGssApRg>AGPgzze1&e1p>P%p,%GRR+p%gsk&Pes>CR&g1>>1%,,pggR&p%%C*uPzzseA&eGe>G>g,RG1RCppCCf&1!zRzk,p1ss,%eeRGGPppz%1&APpzAC&eg1R1e%CCsAgRepPgG&sPzzGC,epG>s&%>,RAeRCP,gA&%GPzGCp&zAss,%p,P&&R>pRee:CPGzA%&&>AGs%%zg&A,RRpP%C6%1RssCC&11As>%>g,AgGzzze,asPPR%C%&1G<1Cp%,AApR>Rpeg0sP1>,CA&PGCs%%RgwAzRssAepr>1,>g>%&1Gesp>PgGA%RAzxCp!s&e>ez>gRGgsP%1C!ApP1z&C%,>1x>zCs,zGes1%Ggg,,R1z%eplP1&>>CRCdAGsspggegpRGP1ezg1G,>p%k,&aCsRp&gC,sGAzee1SG&p>zCA,,ApPCp&g>ARA&zCeGDABeR!CG,%GzR1p,z&APP&>eeR&&1C>1CA,%G>PGz%gzAAP,zzePge1%s1R%,CGGsARgg>AGPg>sCp&,1P>PsP,%GRRtpCeAAAP%z>Cg&g1s>1z,geGPRep%gP.jGzzs%&,z1>sg%g%gG1R,ppeG&PP%>&C/%?1s>A%e,>AsRgpRg19zPpzGC&g%&RsQ%>,sA&RezAgGbgA,z1Cz&p1Ps&%>,R,9RppseCneG,zGzA&z;1Rs%pg,A&1GpRzsKCPPs%Ce,t1Gs%%z,1A,Ppzge&ZPPRPiCC,&1Asep&,GApRzzge,k>PPR&%z&RGCsC%P,A7sR>pGep-z1e>,Cp&PGes%>ReBACP&pAC1D>&p>gzzgsG,sG%PC>A%(Czjep,&PA>PC>&AGgsz%1e,AGRPzze%gR1?>1Cs&AG%s>pgggAAR1zeep,P1C>%%&,yGpsszCgeA>P%zgCKi11,>pCA,&&%RspBg1As1zzeCeTGkg>PC1,sGp1ep&zWARP%Rees&z1e>ACG,eGzsGp,gpe1P&z%eR&Z1C>sCAge,esGpRgz,1P,>keP&&GR>R%%,CA,sAp%g>&G1&zzCe&,1s>PzP,%GRPepCegAAPez>CL&gJzRg%,gHGPPsp%%>fBPps&eA&G1>>G%g,zG1P,R1gPhsP%RRCD&A1s>ApG,>ACRgz&g1)ePpsP%z&%GgsF%z,s&>Rep>ez^g1,z1C,&pG,s&>%gpA4RApsCz.eAAzGCgg&11s1%p,GA&R%pRC,,&Ps>RCe,&1Gsg%zgAg+Rpz>e&,&PR>uCC&sAesepe,GrSRzpGe,&pGs>&%7&R >sCpC,A,e1%pGe1ozAg>,zg&P&&RC%RgsACP1pAeC^>AGsgCz,pG,PA%Pp&A%R1>peC&CPA>zC>&GGgRzRgg,<&RPR&e%&%15>CC1&AGPs>pzggAsR1s,Cz<P1s>%CG,{,%ss%AeuA>P>zgez711%>pzP,RG%R%pleGAsA%zee>&g1gseC1,CGpsPp&ezIWP.>,es&G1e>>CGgCg&s1z8gpgGP&z%eR,,&g>s%G,eABsGpggzA11RzpCz&&GC>R%&,CAsP1peeeAGA,zzC>&,^pGR%&g&GRA%pCe>AAP%sMeG&A1z>A%,,pGPP&p1gR0RPCRseA,S1>>G%1,zA%R,z,gP5gP%sRCR&CGe>A%p,>,zRgpzCp#,1gzPC&&%1AsH>Cg>GAP(p>Cplg1%z1z,,&1Ps1%%C1A-P1ps%ACgP>>sCg&G11GP%p,G2zR%zze3osPszACe,>GCsgpe,1,,Rpz>e&/%Gp>QCA&sGRse%R,G&gPRp1e1apPA>&%R&RG4sP%sgPAeR>pGeC5zA1s>Cp,>G&P%%R%CACGs>Ree&%PGs1CzCbG,spPsg&j&RRz1eCyPPARe>>&GGAsz%1g,&gRPz&eA-R1P>CCP&AGCs>%Ge,AzR1z,ezaP1&>%%,,YGCssppgeA>RGzeeAS11,>psPz1ep,e1Csp%1P,zee>BG1g>zC1,,Gps1pPg%ARP71&R>p,gCFCsGzAe>,%1ps>A1P>z%eR&3&17APPzCCp&11P>PAGPRzpeP&&&>bgP&>peR&,Gz>GpZPezGe1&,1pGeP%zpCp,e11gRV1Pez>eGC>e&cRP%%1CC,gG>sAeg,1AgRRpz1ss,%g,zG1&>1zs>%%P%>ACy&C1sR&zp,>GGRgz5g1y,PpsPCe&%1RsK%C,sAJRe>>e&tgPzz1C,&p1As&%Pp1AQRCpsC,WePszGCg&zG&RC%p,PA&P>pRe&ICGs>,Ce&s1Gsg%zg,A,R1zpe&5pPR>>CC&R1AsC%>g,4%Rzp1e,&{PP>,C%&AAgsC%s,AVpR>pAeg,z1Q>,Cz&PG&s%pVg#&CAspAeCT>PA>gCA&1AeAb%PgeA%RAzJeC=sPAA,C>&AGgsR%1geApP,zPe%YP1}sCCs,bGess%GgpLRR1z,ep&P1&>pCR,eAzss%Age PRGzeez,11C>pC1,&G%sRpCgC&sP,zeesnG1e>z%&,,&pARp&gpARP%zCeP)A1esgCG,gGzsGp,gpAPP&z%eR& 1z>sCA,eGsR%pggzA1,gAPP+zr,>UbPP>&GRRepeg>AGg%AzsGz>eC>1%z,%GRRb1P>Apg,RGGRPz>1>sp%,,pGPPg>>gR-&PCz1eA&e1>>G>C,zGGR,pzgPFgP%>R%G&C1R>A%C,>GGRgpGezc,PpzPCp&%1Psq%%,sAgPpp>gGUgPGz1Cg&pGURe%%,RAuRGpse_^e1RR&Cg&>11se%p,PA&Rz>,ecjpPszACe&>1GsgsW,1AgRppGe&_pPR>0CA&s1Ase%s,GAgRzpGe,BpPP>pC%&RG#s%p&,AAeR>GCszpPgeApPC>,G,ss%Rg9ACg&GZs1p11&,1A&R%pRe 6CGsgCRPzeeC)sPA*zRs>&eGs>pCg,ApRPG,RRpAgAGzRAzRCfsspgggAzR1A,ss%1g1B,CR,AGCss%Ae%&PRGzgezVG1,>pCP,&&zsRpJgCARRAz%e>,G1%>zC1,,GpsPp%g%t&PRzCesxA1s>>CA,gG>s1p%esAPP&z%C&&W1%>s%ggpG>sGpge%A1PgzpCGge1%>R%V,>GssApeC>x&Pgzze1&,1p>G%&gzgeRHp%gsV,Pez>eG&g&O>1%,,pGGR&ppgR&,GzzseA&e1A>G%g,zGAP>ppg1(&P%zRC)&C1s1p%e,>GGRCpzgGf,PR>AC&&%1Rs+%C,RGARezggG:gPzzGC,&p1Ps,%%,RA*RPpsgAxePs>eCg&z11Gp11>&CA,sGGe&&&PszACep;gA_P1Ppg%&,>RAs>%AgpAeC%,e1Ase%>pCCz,P1Lspp>e,AsR>z8G&R&%s,AAe8PGgsApe,kb%P>z&eAw11A>zA%PepAee5>&eAPPsz,gCVP1GspCR,1z&e>OsPA>ePUpACfK1%GegApRPz&>zp;ehB&Pgz,eC&11g>peRg&A&R>%1gzARCR,1GCss%Ae%e>RGzgez&g1,>pCPe&GssRpYgCAsRAzpe>,<Gs>zCA,,GGsPp&g%ARPRzCesdA1%>>%-,gQzR1p,gpAPP&z%e1&8Gps&CA,%G>sApggzA1P,>AeP&&1%>1%0,pGsPAReg>AGPgzze1&e1psG%>,%G1RNp>gsAAPez>%>&g1z>1%e,pGGR&>%es^yPCzseA&e1G>G%ge,G1R,ppgGu&PpzRC_,11s>A%e,sGGRgpzg1S,PpzPCg&%1Rsa%%gsGARep>zPCgBRs1PCpPez9%P>>eCA,g1Rsgpg_gzACz&z11s,1p>GCs,eGAe&_sPszACe,RrAsg%>,1AeRppPe&&zGC>+Cp&sGHse%>,GAgRPp1eCJpPP>&C%&RGhR/%sgyAeRPpGeebzP1s,Cp&PG&sp%Rg ACRspAee)>1&>gCz&1GgR7%Pg&A%&PACR>p>,,cRP,zPess>p,g,ApRPAeR%%Pep;gCR,%Ges>%G>sC1g&G>sPpsep>p%e,)GCssz&CpA>RAzgeRL11,>pCPCgG%sPpZg%AsP&zeC>,P1g>>C1,gGpsPp&gPe1PfzCes&p1e>sCG,gGzR&zCgpAPP&zGeR&&1CsPz,,eGssGpCgzA1P,z>%g&&1z>R%3,CGssApep&AGPezzeA&,1z>P%&gKGRRUpCgRAAPez>eA&g1z>1%z,pGPR&ppeKDOPCzsRAppgsmsPA,>A%R,ppgP%,gRAARA%zC&az1,>5GARppzg1t,gRG1Pez&1Pse%C,sGA,R1sspppP>>eC,&p1PfzPR>ACp&sGzRCEp%g,pGPR&p%gR,d%RA&PepRe_bC1PR,Ce&>1Gsz%z,1A,RpsGe&H%PR>&CC&P1APe%P,GAgRzp1e,M>PP>psz&RG(sCpp,AACR>pGegOPG7>,Cp&PGGs%%Pg{Zp11pAeeL>1&>gCz&1V,ss%Pg&A%RRz4e>8sG&11C>&AGgsG%1g,ApRPR>e%yR1D>pCs,mGeRR>&ggAzR1zgepiP1&>zp,,bG%ss%AgeA>RGzgzd;11,>pCG,&GpsRpeezAsRAzee>3G1e>zC1,PGpsPp&gpARPZzCeRJA1e>>%C,gGzs1pge&APP&z%>&p>epAAR,z>CR,e1zssAGPPzpeP&&,>&,P>>gC&i,1C>R%ggCz>C&&,1p>PPzzpCz&Cp%eRAAPez>shpzezK>PRzse1,C1R>ACgg>A>P&pCelrg%eg,G1R,ppzg%%gs1GRCzpCiizPpzGGARApzg1D,&GG1Rszs,&}A1p%1Cp&1GCs,#ePGz1C,&p,&&pPR>>%e,zpsePBeP>zG%C%z11s,%p,AA&R%pR%:&RPszACe&>1Gsz%zgAAGRppGe&MsPR>/CC&sAsse%>,GACRzpAe,,p1%>&C%&RGksCp0,A0%PLpGeCnz1e>,Cp&PG&Rg%RgnACRPpAe%2>GG1gCz&1G,sp%PgpA%P1zzeC=PPA>%C>&GGgszpPg,ApRPzge%I11IRC%&&AGes>%GggA>R1z,CgaP1&>%C1,/G%ss%AgCA>RGzge><11,>pCP,&G%sRppgCAsRAzCCp_G1g>zsgzRCC&(Rp>A%1ggA>z1ppg1 CP,,eA&s1p,gpe%g%AgRR%Tee&&Pe>%GsRppggzA1hCGAs1zggpAG1ezsCPRipAg>AGPg1eRPpCgz)zR&>,eP,>1ssPxmPzz>eG&ggAAGPAzPG1R>p%gRlj#1AARPpCepN1PPzPGGR>ppgPm&&%ApR&zGgA&&1p,s#&Rgpzg1&eGszPC,&%G^s9%C,sWARpp>gAigP>z1C>&pAPse%%,PA}R%psegDePAG.Cg&>11Re%p,1A&R%pRee&zPszACe,R1Gse%ze1ACRppGe&cpPR>gCC,fGsse%R,GAPRzpGe,EzPP>C%>&RGXsCpg,AACR>z,C%ozP1>,%>&PG,s%zRggACRPpAeCL>1&>gpzC1G,s>%PggA%RPznCpCgPA>zC>,eGgsz%1g,CCRPzge%/A14>pCs,Cg%s>p{ggbsR1zgephP1&>s%G,bGCssz&geAsRGsgeR(11e>pC1,&G>sR>{gzAsP&zeeRTG1>>z%1enGpsGp&gzARP!zCes&>1e>>CG,eGzs1p,gpAPP&z%eG&}1C>s%Wg%G>sGpgzP%,,CAgs1g&e%_1PC>zC1&zGgspCA,pG>zp&g1P>P%&,%CR,,1GszpgPC>&eG&g1z&&1&>s%!,g1As>%pP%>&eA&e1>R?pG,zGGR,p>gPD&P%>1CP&C1P>A%C,>GGRgzsC,M,PszPCe&%1Rs %CgAGARzp>gG7gPzz1C,,A1Pse%%,AA5RCpsgA&eP>zACg&z11sg%p,PAgR%pReb5%PszACe&>1Gsg%zgRA,RppPe,9RPR>{CC%Gez&z1C>gA%Rzp1e,dpPP>&CGCRG&RG%s,AAeAsAgRpppG11%RzzCe1&AR1>C%P&RA&szpPGGAzP%pGee&g1&>CApP}zWeCBse,2eRs>CC&s>peg,ApRPGzsRpAgpAsPz>CGCRX%GggAz;jA&RCz:g%SePA,&GAss%AgeCsggApRpCAgpuGR1>gessPpzgCAsRAPzRGzcgeKPP%>&CCs1psg%ARPmP>Rgz,gCARPszzePPGpgC&APP&z%zPzCe>2>pA%zes&p1AR&eA,pAGs1zggs9Gz-z>Cg,,1C>R%s,zGPeG&s1p>P%&%RC>&&1ps%%e,zsseA&z1z>1%,pVC>&,11s4TgPCzsGAA1zgC&Cg%>GGRzppgP &&eAsPepGet&z%CeeGGRgpzeA,CPpz1C&&R1Rs7%C,s,&RepsgGDePzzAC,,pAss&%p,RApRCpsgAHs&RzGCg&zGAs,%z,PA&R%pACg=CPszA%%&>1Asg%z%AA,RzpPe&<%PR>lpCp&1AsC%>,AAgP%p1e,&ePP>eC%&RGEs>%sCAACR>z&egd>P1>1CpePAps%%GgmARRsz,eeg>1P>gCR&1Gssp%Gg&,%R1z ez/s1R>e%%&GGgRz%1ggApRAz&epTRG,RzCs,:Ges1%GggAzPgR&epUG1&>%CR,&GCsR%AgeczRGzgezo11,>pCP,&&GsRp&gCAPRAzCe>&,G%>zC1,,E&sPp,g%AR?,zCeR+A1e>>CG,gSzYep,gzAPP,z%C>&o1C>ACA,pG>sGpggPA1A,sKeP&e1%>P%b,GGs1AzPg>5&PgzGe1&P1pPP%,,%GGRhp1gs:&PeR>CR&g1R>1%G,pA>R&p%Ce:uP%zsC,&e1s>G%gg,G1R,ppg1_&P%zRC&&C1s>A%P,>GGRgp>e&2,PpzPPCppeGXR%z,sGARep>gG{g&&P1Cg,A1Ps&%%pw%,,pG>CA%CgzsGR%zpe>/p1Rz1%g1%G1sCpP,R)&RzzP&zse%1,1A,RpGPse%pgpAPC%&G1Ase%>sCCe,&A&eg&&PP>&C%pPCC&>1>z&C>g71ARC%PPG>pCp&PG&&%11>>%g,GzteRM>PG>gRAz,C%_G1&>A%PRRsgeC=sPAs%pP&GGgszpCg,ApRPz&pzXR1i>CCR&AG%s>zGg%AzR1z,epiP1p>%%&,RGCss%AgsA>RAzge>J11%ssCP,&G%R&p6g%AsPg>pe>WG1gRsC1,gGpRG>eg%ARPLz1es!A1e>>>S,gGzs1pggpAGP&s%eG&u1C>sCA,eGAsGp>egA1P,zpCz&&1p>R%&,CGGP,peg>AGPAzzeG&,1RsA%&,%GR1,pCgRAA1%sPeG&g1z>G%,,pGP1&PGgRfNPCzseA&>1>RbpR,zGGR,p>gPM&P%zRCe&C1s>A%%,>GARgzsCe-,PpzPC>&%1Rs4%C,GGARep>gAugPsz1p,ge1Ps&%%,RA+RRpseC&1P>zGCg,G11sg%p,PA&RszGeXjCPssCCe&s1GsppR,1A,Rp>ge&YpPR>e%z&s1AsezR,GAeRzzA%C8pPP>&Cs&RGBsCp:CGAeRspGegwzPG>,Cz&PG&RC%RgJACRspAee)>PGR,Cz&1G,s>%Pg,A%P&zReCNsPA>eC>&AGgs>%1g%LsRPz&e%qR1k>%Csg&3ps>p4ggAAR1z,ep&G&s>%CG,/Gzss%AgeA>1szgeP=11g>pCP,&G%1zp0gpAsPgzeesaG1psRC1,,GpsPp&gpARP(zAes;A1e>sCG,gGzsGp,gpAP1Rz%eR&-1z>sCAPe1,Cz,%,zgGPg>1eP&&1%1AP&zGC%,zP%>GpC,eAsR&zCAp1A1W>,Cp&CG>>A%gGCzsCC&g1z>1P>zP%i&z1Rs>p%P%>FeA&e1>Gg1>z1CR,%Gsg1I>P%zRC_%s,gG.Pp>1Cp,,G%gGOpPpzPC&z%gGW&1&>%A,Rep>gG<gPzz1%,Cp11sz%%,RA+AzG>s1pz,GAPPp&>GRs,%p,Pgp&AG>seeRgg*&Ppz1,&mR1&>>C%Rzz5e&W%PRxpR%zgCgsCpG,GAgRzP&sgpLgzLsszzlCpm%1P>g%p1>G&R,peg>ApPRz&eCsppCgIACRsGDR>p1g1GCR1>eeg&>1_g,AGRRzieCeGeeY%Rs>,eP&p1RggAPRPz&e%pRg&AGPP>,GCR>%GggAz.kGGszpCgG1sRPz>C&,gP&>>pX&AACsPHG1%>pCP,&Cs-PGgs-A1RAzee>MG1g>ze1%&GzR%p&g%ARmpGsRG%,g>/R1ezPeR&,pCgpAPP&z%eR&+1C>s%,,eG>sGpggzA1s,P%e1&p1%>R%_pgC>,g11>AppPe>>e1&,1pGGP%>%Cp&>1z>Rpg,>G1s&zpepkAPgzGC&R,pRgROrPC1gRPpCelyg%e,1G1R,pp>4%sgsApRC&%1G>A%e,>CC&eGCs,bg1PzPC&&%&G^PP%>gCPAz1ssp%Ae&G&RRzee&^CRz>l%p&%GPsg_e;>zGCg&zGAA,%p,PA&PApReDWCGs>%Ce&>1Gsg%zgAA,P>zAe&hzPRs%CC&s1Aseps,GAgRzpAe,T>PPR&C>&RG&sC%s,AA1R>>7eenz1T>,CR&PG&s%%RePACRRpAepl>1H>gCG,zG,sz%PgRA%RPz e%8s1gspC>&GGgR,%1ggApPJ>ee%ER1f1eCs,<GeP>sGggAsR1zgep&C1&szse,HG>sspegeA>RGzgs%511e>p%5,&GzsRp%eYAsP&zeC>DG1e>zCG,,GRRAp&g%AR1jzCeRFA1zsPCG,gGzGRp,gzAPP&ReeR&g1C>PCA,eG>P7RPgz2&P,>%eP&&1%s1>G,CGAsAzGg>AGPgzz%,&,1s>P%%,%GPRczpzgAAPzz>%&&g1z>1peesGPR%p%e>0iPCzseAgT1>se%g,RG1R,ppgP,oP%>6CE&p1ss%%e,1i&Rgpzg1,GPpz1C&,zAGs7%A,sA,Rep>gGjgAsz1CP&p11s&%z,R&3Rzpse>we1gzGCA&zGgs1%pg%A&1CpRe&HCPRzACz,P1Gsg%zePA,RzpPeC&>PR>nCCez1AsC%>eS&%Rzzpe,01PP>&C%,&aAsCpC,AAeR>pAegOsP1>,sz&PG&s%%1gkACRspA>Ck>PG>g%&&1G,sp%PCzA%PCzmepFs1&>eCAp/GgR,%1C>ApR1z&e%}R1eszCs&AGe18%GgeAz11P%ep&(1&>sCRg&GCRP>,geNeRG>gezM11,RpCA,&A&sRpRgC+eRA>%>,oG1A>zp&,,GpsPp&%GARPRzCePMA1C>>CGpzGzRCp,gpAPP&z%C&CR1C>ACAg1G>sApggsA1P%>seP&&1%Re%2,%GsR1P,g>&&PgP%e1&g1psa%&,sAGRkpCgsg1PezseG,CAR>1%p,pGAR&p%gR86ApzsCe&e1s>G%C,zt1RCppe& &PRzRCP&CG2ss%e,GGGG>pzgGU,PzzPCC,>1RsK%C%*GARCp>e,&%Pzz1C,CC1Ps,%%,Rg,RCpAgAYeP>zGCggzges,%P,PA%R%>rej/C1ezACR&>1Gsg%P,1,,1,pPez %Gg>BCp&sWAsG%>gCAgPYp1e1jpAP>AC%,,G!R,%sg%AeG>zpegdAP1s>Cp&1G&s%psg=AsRsz%eeSsPG>gs1&1Gesp%Pg&A%RRz^eAisPA>eCs&GGgsz%Gg,ApRPz,e%dR1c>%%e&AGes>Re>P%s,,1CsPpGepARP1,QGsss%AgeA>A,zgezn11,>pCP,&!%PEp_gCAsRAzeesHG1gRCC1,eGps1p&g%ARP0>(esfA1e>RCG,eGzs1p>gpAPP&zpeR&h1C>sCA,eG>");local n=0;f.dXKsJdLa(function()f.zxvpFiT_()n=n+1 end)local function e(s,e)if e then return n end;n=s+n;end local s,n,o=t(0,t,e,a,f.IZwoVwKS);local function p()local n,s=f.IZwoVwKS(a,e(1,3),e(5,6)+2);e(2);return(s*256)+n;end;local h=true;local h=0 local function u()local l=n();local e=n();local d=1;local l=(s(e,1,20)*(2^32))+l;local n=s(e,21,31);local e=((-1)^s(e,32));if(n==0)then if(l==h)then return e*0;else n=1;d=0;end;elseif(n==2047)then return(l==0)and(e*(1/0))or(e*(0/0));end;return f.LMMRbAfo(e,n-1023)*(d+(l/(2^52)));end;local b=n;local function k(n)local s;if(not n)then n=b();if(n==0)then return'';end;end;s=f.KZeobxGn(a,e(1,3),e(5,6)+n-1);e(n)local e=""for n=(1+h),#s do e=e..f.KZeobxGn(s,n,n)end return e;end;local b=#f._XyuVRmw(r('\49.\48'))~=1 local e=n;local function le(...)return{...},f.MwYqELdk('#',...)end local function se()local r={};local e={};local h={};local a={h,r,nil,e};local e=n()local g={}for l=1,e do local s=o();local n;if(s==2)then n=(o()~=#{});elseif(s==3)then local e=u();if b and f.XmfyLtwn(f._XyuVRmw(e),'.(\48+)$')then e=f.dlbEuROE(e);end n=e;elseif(s==1)then n=k();end;g[l]=n;end;a[3]=o();for a=1,n()do local e=o();if(s(e,1,1)==0)then local t=s(e,2,3);local f=s(e,4,6);local e={p(),p(),nil,nil};if(t==0)then e[d]=p();e[z]=p();elseif(t==#{1})then e[d]=n();elseif(t==c[2])then e[d]=n()-(2^16)elseif(t==c[3])then e[d]=n()-(2^16)e[z]=p();end;if(s(f,1,1)==1)then e[l]=g[e[l]]end if(s(f,2,2)==1)then e[d]=g[e[d]]end if(s(f,3,3)==1)then e[z]=g[e[z]]end h[a]=e;end end;for e=1,n()do r[e-(#{1})]=se();end;return a;end;local function ne(s,e,n)local l=e;local l=n;return r(f.XmfyLtwn(f.XmfyLtwn(({f.dXKsJdLa(s)})[2],e),n))end local function b(_,c,o)local function ne(...)local p,u,k,ne,h,n,a,ee,m,j,r,s;local e=0;while-1<e do if 3>e then if 0<e then if-1~=e then repeat if 2~=e then k=t(6,76,3,63,_);h=le ne=0;break;end;n=-41;a=-1;until true;else n=-41;a=-1;end else p=t(6,10,1,87,_);u=t(6,63,2,38,_);end else if e>4 then if 3<e then repeat if e~=6 then s=t(7);break;end;e=-2;until true;else s=t(7);end else if e==3 then ee={};m={...};else j=f.MwYqELdk('#',...)-1;r={};end end end e=e+1;end;for e=0,j do if(e>=k)then ee[e-k]=m[e+1];else s[e]=m[e+1];end;end;local e=j-k+1 local e;local t;local function k(...)while true do end end while true do if n<-40 then n=n+42 end e=p[n];t=e[y];if 48>t then if t<=23 then if t>11 then if 18>t then if 14<t then if 15<t then if t~=17 then s[e[l]]=o[e[d]];else local a=u[e[d]];local g;local t={};g=f.mYEQvlUm({},{__index=function(n,e)local e=t[e];return e[1][e[2]];end,__newindex=function(s,e,n)local e=t[e]e[1][e[2]]=n;end;});for l=1,e[z]do n=n+1;local e=p[n];if e[y]==81 then t[l-1]={s,e[d]};else t[l-1]={c,e[d]};end;r[#r+1]=t;end;s[e[l]]=b(a,g,o);end else s[e[l]]=c[e[d]];end else if 12>=t then local e=e[l]s[e](g(s,e+1,a))else if t>9 then repeat if t<14 then if not s[e[l]]then n=n+1;else n=e[d];end;break;end;local e=e[l]local l,n=h(s[e](s[e+1]))a=n+e-1 local n=0;for e=e,a do n=n+1;s[e]=l[n];end;until true;else local e=e[l]local l,n=h(s[e](s[e+1]))a=n+e-1 local n=0;for e=e,a do n=n+1;s[e]=l[n];end;end end end else if 21>t then if t>=19 then if 20==t then o[e[d]]=s[e[l]];else n=e[d];end else local z,p,t,g,f;local n=0;while n>-1 do if n>=3 then if n<5 then if n==3 then g=z[t];else f=z[p];end else if n>5 then n=-2;else s(f,g);end end else if n<=0 then z=e;else if-3<=n then repeat if 2>n then p=l;break;end;t=d;until true;else p=l;end end end n=n+1 end end else if t>=22 then if 21<=t then for n=31,60 do if 23>t then local n=e[l];local l=s[n];for e=n+1,e[d]do f.zyXjCnYb(l,s[e])end;break;end;s[e[l]]=b(u[e[d]],nil,o);break;end;else local n=e[l];local l=s[n];for e=n+1,e[d]do f.zyXjCnYb(l,s[e])end;end else local p=e[l];local d={};for e=1,#r do local e=r[e];for n=0,#e do local e=e[n];local l=e[1];local n=e[2];if l==s and n>=p then d[n]=l[n];e[1]=d;end;end;end;end end end else if 6<=t then if t<9 then if
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "GG hub",
+   Icon = nil, -- Ícone removido (ID inválido)
+   LoadingTitle = "GGhub loading...",
+   LoadingSubtitle = "",
+   Theme = "Dark",
+   ToggleUIKeybind = Enum.KeyCode.RightControl,
+   DisableRayfieldPrompts = true,
+   DisableBuildWarnings = true,
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = "GG Hub",
+      FileName = "GGhub_SaberSimulator"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "",
+      RememberJoins = true
+   },
+   KeySystem = false
+})
+
+local Main = Window:CreateTab("Main", 4483362458)
+local Farm = Window:CreateTab("Other", 4483362458)
+
+-- Auto Swing
+local autoSwing = Main:CreateToggle({
+   Name = "Auto Swing",
+   CurrentValue = false,
+   Callback = function(Value)
+      getgenv().autoSwing = Value
+      if Value then
+         spawn(function()
+            while getgenv().autoSwing do
+               task.wait(0.1)
+               pcall(function()
+                  game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SwingSaber"):FireServer()
+               end)
+            end
+         end)
+      end
+   end
+})
+
+-- Auto Sell
+local autoSell = Main:CreateToggle({
+   Name = "Auto Sell",
+   CurrentValue = false,
+   Callback = function(Value)
+      getgenv().autoSell = Value
+      if Value then
+         spawn(function()
+            while getgenv().autoSell do
+               task.wait(0.1)
+               pcall(function()
+                  game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SellStrength"):FireServer()
+               end)
+            end
+         end)
+      end
+   end
+})
+
+-- Auto Daily Rewards (Corrigido)
+local autoReward = Main:CreateToggle({
+   Name = "Auto Collect DailyRewards",
+   CurrentValue = false,
+   Callback = function(Value)
+      getgenv().autoReward = Value
+      if Value then
+         Rayfield:Notify({
+            Title = "Enabled!",
+            Content = "Auto DailyRewards enabled",
+            Duration = 3,
+            Image = 4483362458,
+         })
+         
+         spawn(function()
+            while getgenv().autoReward do
+               if not getgenv().autoReward then break end -- Verificação extra
+               
+               task.wait(50) -- 50 segundos
+               
+               if not getgenv().autoReward then break end -- Verificação antes de executar
+               
+               -- Verifica se os serviços existem antes de tentar usar
+               local success, result = pcall(function()
+                  local ReplicatedStorage = game:GetService("ReplicatedStorage")
+                  local Events = ReplicatedStorage:FindFirstChild("Events")
+                  
+                  if Events then
+                     local UIAction = Events:FindFirstChild("UIAction")
+                     if UIAction then
+                        -- Tenta coletar diferentes tipos de rewards
+                        local rewardTypes = {
+                           "ClaimDailyReward",
+                           "ClaimDailyTimedReward"
+                        }
+                        
+                        local rewardsClaimed = 0
+                        for _, rewardType in pairs(rewardTypes) do
+                           if not getgenv().autoReward then break end
+                           
+                           local rewardSuccess = pcall(function()
+                              UIAction:FireServer(rewardType)
+                           end)
+                           
+                           if rewardSuccess then
+                              rewardsClaimed = rewardsClaimed + 1
+                           end
+                           task.wait(0.5)
+                        end
+                        
+                        -- Notificação de sucesso apenas se coletou algum reward
+                        if rewardsClaimed > 0 and getgenv().autoReward then
+                           Rayfield:Notify({
+                              Title = "DailyRewards Colleted!",
+                              Content = "DailyRewards colleted",
+                              Duration = 4,
+                              Image = 4483362458,
+                           })
+                        end
+                     end
+                  end
+               end)
+               
+               if not success then
+                  print("Erro ao coletar rewards:", result)
+               end
+            end
+         end)
+      else
+         Rayfield:Notify({
+            Title = "Disabled!",
+            Content = "Auto DailyRewards disabled",
+            Duration = 3,
+            Image = 4483362458,
+         })
+      end
+   end
+})
+
+-- Kill Player
+local ButtonKill = Farm:CreateButton({
+   Name = "Matar Jogador",
+   Callback = function()
+      local player = game.Players.LocalPlayer
+      if player and player.Character and player.Character:FindFirstChild("Humanoid") then
+         player.Character.Humanoid.Health = 0
+      end
+   end
+})
+
+-- Jump Power Slider
+local SliderJump = Farm:CreateSlider({
+   Name = "Pulo (JumpPower)",
+   Range = {0, 100},
+   Increment = 1,
+   Suffix = "",
+   CurrentValue = 50,
+   Callback = function(Value)
+      local player = game.Players.LocalPlayer
+      if player and player.Character and player.Character:FindFirstChild("Humanoid") then
+         player.Character.Humanoid.JumpPower = Value
+      end
+   end
+})
+
+-- NPC Dropdown (Simplificado)
+local DropdownNPC = Farm:CreateDropdown({
+   Name = "Selecionar NPC",
+   Options = {"Npc 1", "Npc 2", "Npc 3"},
+   CurrentOption = "Npc 1",
+   Callback = function(Option)
+      print("NPC selecionado:", Option)
+   end
+})
+
+-- Keybind Example
+local KeybindExample = Farm:CreateKeybind({
+   Name = "Atalho de Teclado",
+   CurrentKeybind = "F",
+   HoldToInteract = false,
+   Callback = function(Key)
+      print("Tecla pressionada:", tostring(Key))
+   end
+})
+
+-- Creator Info
+local ParagraphCreator = Farm:CreateParagraph({
+   Title = "Creator",
+   Content = "GG hub by DNzinGG"
+})
+
+Rayfield:LoadConfiguration()
