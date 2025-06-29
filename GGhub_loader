@@ -1,23 +1,21 @@
-local supportedPlaceId = 3823781113 -- Saber Simulator
-local githubScriptUrl = "https://raw.githubusercontent.com/DNzinBLOX/Test/refs/heads/main/SaberSimulator"
+local PlaceId = 3823781113 -- Saber Simulator
+local githubUrl = "https://raw.githubusercontent.com/DNzinBLOX/Test/refs/heads/main/SaberSimulator"
 
--- Função para carregar o script do GitHub
 local function loadScriptFromGithub(url)
     local HttpService = game:GetService("HttpService")
     local response = HttpService:RequestAsync({ Url = url, Method = "GET" })
     if response.Success then
         local scriptCode = response.Body
-        local script = loadstring(scriptCode) -- Use loadstring para Roblox
+        local script = loadstring(scriptCode)
         return script
     else
         warn("Falha ao carregar o script do GitHub:", response.StatusCode)
     end
 end
 
--- Verificar se o jogo é suportado
-if game.PlaceId == supportedPlaceId then
+if game.PlaceId == PlaceId then
     -- Carregar e executar o script do GitHub
-    local script = loadScriptFromGithub(githubScriptUrl)
+    local script = loadScriptFromGithub(githubUrl)
     if script then
         script()
     end
