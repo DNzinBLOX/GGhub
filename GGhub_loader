@@ -1,5 +1,5 @@
 local PlaceId = 3823781113 -- Saber Simulator
-local githubUrl = "https://raw.githubusercontent.com/DNzinBLOX/Test/refs/heads/main/SaberSimulator"
+local githubUrl = "https://raw.githubusercontent.com/DNzinBLOX/GGhub/refs/heads/main/GGhub_SaberSimulator"
 
 local function loadScriptFromGithub(url)
     local HttpService = game:GetService("HttpService")
