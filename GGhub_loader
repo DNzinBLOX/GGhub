@@ -5,7 +5,7 @@ if game.PlaceId == gameId then
     print("Saber Simulator detectado")
     print("Carregando GG hub - Saber Simulator")
 
-    local url = "https://raw.githubusercontent.com/DNzinBLOX/Test/refs/heads/main/SaberSimulator"
+    local url = ""https://raw.githubusercontent.com/DNzinBLOX/Test/refs/heads/main/SaberSimulator""
 
     local function loadScript(url)
         local success, result = pcall(function()
