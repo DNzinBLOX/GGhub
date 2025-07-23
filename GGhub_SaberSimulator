@@ -1,8 +1,12 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
+local Players = game:GetService("Players")
+local local_player = Players.LocalPlayer
+local replicated_storage = game:GetService("ReplicatedStorage")
+
 local Window = Rayfield:CreateWindow({
    Name = "GG hub",
-   Icon = nil, -- Ícone removido (ID inválido)
+   Icon = 0,
    LoadingTitle = "GGhub loading...",
    LoadingSubtitle = "",
    Theme = "Dark",
@@ -14,57 +18,34 @@ local Window = Rayfield:CreateWindow({
       FolderName = "GG Hub",
       FileName = "GGhub_SaberSimulator"
    },
-   Discord = {
-      Enabled = false,
-      Invite = "",
-      RememberJoins = true
-   },
    KeySystem = false
 })
 
 local Main = Window:CreateTab("Main", 4483362458)
-local Farm = Window:CreateTab("Other", 4483362458)
-
--- testLabel
-local Label = Main:CreateLabel("Label Example", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
-
--- testParagraph
-local Paragraph = Main:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"})
-
--- testButton
-local Button = Main:CreateButton({
-   Name = "Button Example",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
--- testSlider
-local Slider = Tab:CreateSlider({
-   Name = "Slider Example",
-   Range = {0, 100},
-   Increment = 10,
-   Suffix = "Bananas",
-   CurrentValue = 10,
-   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-   -- The function that takes place when the slider changes
-   -- The variable (Value) is a number which correlates to the value the slider is currently at
-   end,
-})
+local Farm = Window:CreateTab("Farm", 4483362458)
+local Misc = Window:CreateTab("Misc", 4483362458)
 
 -- Auto Swing
-local autoSwing = Main:CreateToggle({
+Main:CreateToggle({
    Name = "Auto Swing",
    CurrentValue = false,
    Callback = function(Value)
       getgenv().autoSwing = Value
       if Value then
+         if local_player.Character and local_player.Backpack then
+            local tool = local_player.Backpack:FindFirstChildOfClass("Tool")
+            if tool then
+               local humanoid = local_player.Character:FindFirstChild("Humanoid")
+               if humanoid then
+                  humanoid:EquipTool(tool)
+               end
+            end
+         end
          spawn(function()
             while getgenv().autoSwing do
                task.wait(0.1)
                pcall(function()
-                  game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SwingSaber"):FireServer()
+                  replicated_storage.Events.SwingSaber:FireServer()
                end)
             end
          end)
@@ -73,7 +54,7 @@ local autoSwing = Main:CreateToggle({
 })
 
 -- Auto Sell
-local autoSell = Main:CreateToggle({
+Main:CreateToggle({
    Name = "Auto Sell",
    CurrentValue = false,
    Callback = function(Value)
@@ -81,134 +62,153 @@ local autoSell = Main:CreateToggle({
       if Value then
          spawn(function()
             while getgenv().autoSell do
-               task.wait(0.1)
+               task.wait(0.5)
                pcall(function()
-                  game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SellStrength"):FireServer()
+                  replicated_storage.Events.SellStrength:FireServer()
                end)
             end
          end)
       end
    end
 })
--- Auto Collet DailyRewards
-local autoReward = Main:CreateToggle({
+
+-- Auto DailyRewards
+Main:CreateToggle({
    Name = "Auto Collect DailyRewards",
    CurrentValue = false,
    Callback = function(Value)
       getgenv().autoReward = Value
       if Value then
-         Rayfield:Notify({
-            Title = "Enabled!",
-            Content = "Auto DailyRewards enabled",
-            Duration = 3,
-            Image = 4483362458,
-         })
-         
          spawn(function()
             while getgenv().autoReward do
-               if not getgenv().autoReward then break end -- Verificação extra
-               
-               task.wait(50) -- 50 segundos
-               
-               if not getgenv().autoReward then break end -- Verificação antes de executar
-               
-               -- Verifica se os serviços existem antes de tentar usar
-               local success, result = pcall(function()
-                  local ReplicatedStorage = game:GetService("ReplicatedStorage")
-                  local Events = ReplicatedStorage:FindFirstChild("Events")
-                  
-                  if Events then
-                     local UIAction = Events:FindFirstChild("UIAction")
-                     if UIAction then
-                        -- Tenta coletar diferentes tipos de rewards
-                        local rewardTypes = {
-                           "ClaimDailyReward",
-                           "ClaimDailyTimedReward"
-                        }
-                        
-                        local rewardsClaimed = 0
-                        for _, rewardType in pairs(rewardTypes) do
-                           if not getgenv().autoReward then break end
-                           
-                           local rewardSuccess = pcall(function()
-                              UIAction:FireServer(rewardType)
-                           end)
-                           
-                           if rewardSuccess then
-                              rewardsClaimed = rewardsClaimed + 1
-                           end
-                           task.wait(0.5)
-                        end
+               task.wait(5)
+               local Events = replicated_storage:FindFirstChild("Events")
+               if Events then
+                  local UIAction = Events:FindFirstChild("UIAction")
+                  if UIAction then
+                     for _, rewardType in pairs({"ClaimDailyReward", "ClaimDailyTimedReward"}) do
+                        pcall(function()
+                           UIAction:FireServer(rewardType)
+                        end)
+                        task.wait(0.5)
                      end
                   end
-               end)
-               
-               if not success then
-                  print("Erro ao coletar rewards:", result)
                end
             end
          end)
-      else
-         Rayfield:Notify({
-            Title = "Disabled!",
-            Content = "Auto DailyRewards disabled",
-            Duration = 3,
-            Image = 4483362458,
-         })
       end
    end
 })
 
--- Kill Player
-local ButtonKill = Farm:CreateButton({
-   Name = "Matar Jogador",
-   Callback = function()
-      local player = game.Players.LocalPlayer
-      if player and player.Character and player.Character:FindFirstChild("Humanoid") then
-         player.Character.Humanoid.Health = 0
-      end
-   end
-})
-
--- Jump Power Slider
-local SliderJump = Farm:CreateSlider({
-   Name = "Pulo (JumpPower)",
-   Range = {0, 100},
-   Increment = 1,
-   Suffix = "",
-   CurrentValue = 50,
+-- Auto Equip Best Pets
+Main:CreateToggle({
+   Name = "Auto EquipBestPets",
+   CurrentValue = false,
    Callback = function(Value)
-      local player = game.Players.LocalPlayer
-      if player and player.Character and player.Character:FindFirstChild("Humanoid") then
-         player.Character.Humanoid.JumpPower = Value
+      getgenv().autoPets = Value
+      if Value then
+         spawn(function()
+            while getgenv().autoPets do
+               task.wait(5)
+               pcall(function()
+                  replicated_storage.Events.UIAction:FireServer("EquipBestPets")
+               end)
+            end
+         end)
       end
    end
 })
 
--- NPC Dropdown (Simplificado)
-local DropdownNPC = Farm:CreateDropdown({
-   Name = "Selecionar NPC",
-   Options = {"Npc 1", "Npc 2", "Npc 3"},
-   CurrentOption = "Npc 1",
-   Callback = function(Option)
-      print("NPC selecionado:", Option)
+-- Auto Crown
+local collectables = workspace:WaitForChild("Collectables", 5)
+
+Main:CreateToggle({
+   Name = "Auto Crown",
+   CurrentValue = false,
+   Callback = function(Value)
+      getgenv().autoCrown = Value
+      if Value then
+         spawn(function()
+            while getgenv().autoCrown do
+               if collectables and #collectables:GetChildren() > 0 then
+                  local crowns = {}
+                  for _, v in pairs(collectables:GetChildren()) do
+                     if v:IsA("MeshPart") then
+                        table.insert(crowns, v)
+                     end
+                  end
+                  replicated_storage.Events.CollectCurrencyPickup:FireServer(crowns)
+               end
+               task.wait(2)
+            end
+         end)
+      end
    end
 })
 
--- Keybind Example
-local KeybindExample = Farm:CreateKeybind({
-   Name = "Atalho de Teclado",
-   CurrentKeybind = "F",
-   HoldToInteract = false,
-   Callback = function(Key)
-      print("Tecla pressionada:", tostring(Key))
-   end
+-- Farm Tab (a completar depois)
+Farm:CreateParagraph({Title = "auto FarmBoss", Content = "auto hitBoss"})
+
+Farm:CreateDropdown({
+   Name = "Select Boss",
+   Options = {"Normal", "Earth"},
+   CurrentOption = {"Normal"},
+   MultipleOptions = false,
+   Callback = function(Options) end,
 })
 
--- Creator Info
-local ParagraphCreator = Farm:CreateParagraph({
-   Title = "Creator",
-   Content = "GG hub by DNzinGG"
+Farm:CreateToggle({
+   Name = "auto HitBoss",
+   CurrentValue = false,
+   Callback = function(Value) end,
 })
+
+-- Misc Tab
+Misc:CreateParagraph({Title = "Other Functions", Content = ""})
+
+-- WalkSpeed Input
+local function getCurrentWalkSpeed()
+   local humanoid = local_player.Character and local_player.Character:FindFirstChild("Humanoid")
+   return humanoid and humanoid.WalkSpeed or 16
+end
+
+local InputWalkSpeed = Misc:CreateInput({
+   Name = "Input WalkSpeed",
+   CurrentValue = "",
+   PlaceholderText = "Speed: " .. tostring(getCurrentWalkSpeed()),
+   RemoveTextAfterFocusLost = true,
+   Callback = function(Text)
+      local humanoid = local_player.Character and local_player.Character:FindFirstChild("Humanoid")
+      local speed = tonumber(Text)
+      if humanoid and speed and speed >= 0 and speed <= 1000 then
+         humanoid.WalkSpeed = speed
+      end
+   end,
+})
+
+-- WalkSpeed Slider
+local WalkSpeed = Misc:CreateSlider({
+   Name = "WalkSpeed",
+   Range = {0, 1000},
+   Increment = 5,
+   Suffix = "Speed",
+   CurrentValue = getCurrentWalkSpeed(),
+   Callback = function(Value)
+      local humanoid = local_player.Character and local_player.Character:FindFirstChild("Humanoid")
+      if humanoid then
+         humanoid.WalkSpeed = Value
+      end
+   end,
+})
+
+local function onCharacterAdded(character)
+   local humanoid = character:WaitForChild("Humanoid", 5)
+   if humanoid and WalkSpeed.CurrentValue then
+      humanoid.WalkSpeed = WalkSpeed.CurrentValue
+   end
+end
+
+if local_player.Character then onCharacterAdded(local_player.Character) end
+local_player.CharacterAdded:Connect(onCharacterAdded)
 
 Rayfield:LoadConfiguration()
